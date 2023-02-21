@@ -19,7 +19,7 @@ app.use(express.static('./assets'))
 app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(fileUpload())
-
+app.use(express.static('./assets'))
 app.set('view engine', 'ejs')
 app.set('views', './views')
 
